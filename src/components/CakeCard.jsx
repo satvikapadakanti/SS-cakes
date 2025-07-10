@@ -46,8 +46,8 @@ const CakeCard = ({ cake }) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <span className="text-2xl font-bold text-pink-600">
-              ${cake.price}
-            </span>
+  ₹{cake.price_inr} {/* Changed from ${cake.price} to ₹{cake.price_inr} */}
+</span>
           </div>
           <button className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-200 flex items-center space-x-2 font-medium shadow-md hover:shadow-lg">
             <ShoppingCart size={16} />
